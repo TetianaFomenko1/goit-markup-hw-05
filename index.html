@@ -56,10 +56,23 @@
     </header>
     <main>
       <section class="section-main">
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-close button" data-modal-close>
+              <svg class="close-picture">
+                <use
+                  href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="overlay">
           <div class="title-container container">
             <h1 class="title">Effective Solutions for Your Business</h1>
-            <button class="button-order" type="button">Order Service</button>
+            <button class="button-order" type="button" data-modal-open>
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -422,5 +435,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
